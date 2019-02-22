@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#top h1 {
+  font-size: 2em;
+}
+
+#content {
+  margin-top: 100px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Used to create paper like format with text
+    Kind of like a note card, or oc sheet */
+/* SUBJECT TO CHANGE IDEAS*/
+.paper{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 150pt;
+}
+
+.button{
+  position: absolute;
+  font-size: 12px;
+  padding: 25px 25px;
+  color: aquamarine;
+}
+
+.button:hover{
+  color: tomato;
+  font-weight: bold;
+}

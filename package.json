@@ -1,0 +1,22 @@
+{
+  "name": "http-api-assignment-ii-master",
+  "version": "1.0.0",
+  "engines": {
+    "node": "11.7.0",
+    "npm": "6.5.0"
+  },
+  "description": "HTTP API assignment Number 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests Complete\""
+  },
+  "author": "Nathan Stoeckle",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
