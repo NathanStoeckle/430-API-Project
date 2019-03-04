@@ -4,7 +4,6 @@ const users = {};
 //  while taking in a request, response, status code and object
 //    needed to send
 const respondJSON = (request, response, status, object) => {
-  
   // Content-Type for json
   const headers = {
     'Content-Type': 'application/json',
@@ -45,17 +44,16 @@ const getUsers = (request, response) => {
 
 const getUsersMeta = (request, response) => respondJSONMeta(request, response, 200);
 
-const addUser = (request, response, body) => {
-  
+const addCharacter = (request, response, body) => {
   // default json message if left blank
   const responseJSON = {
-    message: 'Name and age are both required.',
+    message: 'Name, age, species, class, and notes are all required.',
   };
 
   // checks to see if any of the parameters are missing
   if (!body.name || !body.age) {
     responseJSON.id = 'Bad Request';
-    
+
     // return 400 error
     return respondJSON(request, response, 400, responseJSON);
   }
@@ -108,7 +106,7 @@ const notRealMeta = (request, response) => {
 module.exports = {
   getUsers,
   getUsersMeta,
-  addUser,
+  addCharacter,
   notReal,
   notRealMeta,
 };

@@ -1,0 +1,22 @@
+Nathan Stoeckle
+What your site does and its purpose.
+What my site is supposed to do is to allow users to create original characters with a basic template for easy usability
+
+What part of your app does the API handle?
+The app is supposed to be able to handle something called jQuery Flip by http://nnattawat.github.io/flip/, which would allow uses to have their character names on the front,
+and other details on the back
+
+What went right and what went wrong?
+The general layout, and the starter code were probably the easy parts of the project, as I could modify it without much trouble
+Also, I used a website, https://coolors.co/, to try to pick the best colors to go with white
+
+The api part of the project is where things went wrong for the most part, I could not figure out how to get the card to be created, even though, I managed to create a format
+so that it would be displayed like so. Initally, I thought that the fields were not clearing as well, until I modified the server.js file for further testing, and found
+out that it did get modified easily.
+
+If you were to continue, what would you do to improve your app?
+Probably use a different api for a card flip. The documentation was pretty short, and there was not a whole lot to go off, plus, I had trouble creating the cards.
+
+How did you go above and beyond?
+Not applicable, due to time constraints (as well as getting sick 4 days before the project was due), I was not able to do something creative for above and beyond.
+If I had, it would probably be something that I could allow for a search function, or something similar, to allow users to find a particular character for reference or to edit.

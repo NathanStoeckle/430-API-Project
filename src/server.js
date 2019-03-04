@@ -37,7 +37,7 @@ const onRequest = (request, response) => {
       }
       break;
     case 'POST':
-      if (parsedUrl.pathname === '/addUser') {
+      if (parsedUrl.pathname === '/addCharacter') {
         const res = response;
         const body = [];
 
@@ -56,17 +56,15 @@ const onRequest = (request, response) => {
 
         // on end of upload stream.
         request.on('end', () => {
-          
           // Combine the byte array by using Buffer.concat
           //  and convert it to a string value (in this instance)
           const bodyString = Buffer.concat(body).toString();
           const bodyParams = query.parse(bodyString);
 
           // Pass it into our addUser function
-          jsonHandler.addUser(request, res, bodyParams);
+          jsonHandler.addCharacter(request, res, bodyParams);
         });
-      } 
-      else {
+      } else {
         jsonHandler.notReal(request, response);
       }
       break;
