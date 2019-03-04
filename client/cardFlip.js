@@ -200,7 +200,8 @@ var createTemplate = function createTemplate(num, name, age, species, classField
 
   content.innerHTML += html;
 
-  $("div[id^=card-]").flip(); //apply flip animations
+  //Needed to get flip animations according to the api site
+  $("div[id^=card-]").flip();
 
   // Reset the cards to display names
   $("div[id^=card-]").trigger("click");
